@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗑️ Skip Selection Redesign
 
-## Getting Started
+This is a complete redesign of the **“Choose Your Skip Size”** page from [WeWantWaste.co.uk](https://wewantwaste.co.uk). The goal of this challenge was to improve the **UI/UX**, maintain functionality, and ensure full **mobile and desktop responsiveness** while dynamically fetching data from the live API.
 
-First, run the development server:
+---
+
+## 🔗 Live Links
+
+- 🚀 **Live Preview**: [skip-selection-redesign.vercel.app](https://skip-selection-redesign-8c5peefth-njkrs-projects.vercel.app)
+- 📂 **GitHub Repo**: [https://github.com/njkr/skip-selection-redesign](https://github.com/njkr/skip-selection-redesign)
+
+---
+
+## 🎯 Objective
+
+The objective was to redesign the skip selection page in a **visually unique and modern way**, distinct from the original layout. Functional features, such as skip selection, pricing, hire period, and road restriction warnings, had to be preserved and improved.
+
+---
+
+## 📷 Before vs After
+
+| Original Design                                                                       | Redesigned Version                                                                    |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [![F3xalyX.md.png](https://iili.io/F3xalyX.md.png)](https://freeimage.host/i/F3xalyX) | [![F3xacvt.md.png](https://iili.io/F3xacvt.md.png)](https://freeimage.host/i/F3xacvt) |
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech               | Purpose                                    |
+| ------------------ | ------------------------------------------ |
+| React + TypeScript | Component-based structure with type safety |
+| Tailwind CSS       | Utility-first, responsive design           |
+| Framer Motion      | Animations & transitions                   |
+| React Icons        | Icon support                               |
+| Vercel             | Deployment                                 |
+
+---
+
+## 🔌 API Integration
+
+Data is fetched from:
+GET https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
+
+### Mapped Fields:
+
+| API Field                | UI Field                    |
+| ------------------------ | --------------------------- |
+| `id`                     | Internal ID                 |
+| `size`                   | Skip size (e.g., "4 Yard")  |
+| `price_before_vat + vat` | Final displayed price       |
+| `hire_period_days`       | Hire period (e.g., 14 days) |
+| `allowed_on_road`        | Displays warning badge      |
+| `forbidden`              | Used for future enhancement |
+
+---
+
+## 🧠 Features & Improvements
+
+- 📦 **Card-based layout** with skip image, size, and price
+- ✅ **Dynamic API data** rendering
+- 📱 **Responsive design** (mobile/tablet/desktop)
+- ⚠️ **"Not Allowed on Road"** badge when applicable
+- 💬 **Visual selection feedback**
+- 📌 **Sticky footer** on mobile with summary and CTA
+
+---
+
+## 📦 Run Locally
+
+To run the project on your local machine:
 
 ```bash
+# Clone the repo
+git clone https://github.com/njkr/skip-selection-redesign.git
+cd skip-selection-redesign
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Visit the app in your browser
+http://localhost:3000
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
