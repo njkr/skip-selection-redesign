@@ -6,7 +6,7 @@ This is a complete redesign of the **“Choose Your Skip Size”** page from [We
 
 ## 🔗 Live Links
 
-- 🚀 **Live Preview**: [skip-selection-redesign.vercel.app](https://skip-selection-redesign-8c5peefth-njkrs-projects.vercel.app)
+- 🚀 **Live Preview**: [skip-selection-redesign.vercel.app](https://skip-selection-redesign.vercel.app/)
 - 📂 **GitHub Repo**: [https://github.com/njkr/skip-selection-redesign](https://github.com/njkr/skip-selection-redesign)
 
 ---
