@@ -19,21 +19,21 @@ The objective was to redesign the skip selection page in a **visually unique and
 
 ## 📷 Before vs After
 
-| Original Design | Redesigned Version |
-|-----------------|--------------------|
+| Original Design                                                                       | Redesigned Version                                                                    |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [![F3xalyX.md.png](https://iili.io/F3xalyX.md.png)](https://freeimage.host/i/F3xalyX) | [![F3xacvt.md.png](https://iili.io/F3xacvt.md.png)](https://freeimage.host/i/F3xacvt) |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tech           | Purpose                                |
-|----------------|----------------------------------------|
+| Tech               | Purpose                                    |
+| ------------------ | ------------------------------------------ |
 | React + TypeScript | Component-based structure with type safety |
-| Tailwind CSS   | Utility-first, responsive design       |
-| Framer Motion  | Animations & transitions               |
-| React Icons    | Icon support                           |
-| Vercel         | Deployment                             |
+| Tailwind CSS       | Utility-first, responsive design           |
+| Framer Motion      | Animations & transitions                   |
+| React Icons        | Icon support                               |
+| Vercel             | Deployment                                 |
 
 ---
 
@@ -42,17 +42,16 @@ The objective was to redesign the skip selection page in a **visually unique and
 Data is fetched from:
 GET https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
 
-
 ### Mapped Fields:
 
-| API Field           | UI Field                    |
-|---------------------|-----------------------------|
-| `id`                | Internal ID                 |
-| `size`              | Skip size (e.g., "4 Yard")  |
-| `price_before_vat + vat` | Final displayed price      |
-| `hire_period_days`  | Hire period (e.g., 14 days) |
-| `allowed_on_road`   | Displays warning badge      |
-| `forbidden`         | Used for future enhancement |
+| API Field                | UI Field                    |
+| ------------------------ | --------------------------- |
+| `id`                     | Internal ID                 |
+| `size`                   | Skip size (e.g., "4 Yard")  |
+| `price_before_vat + vat` | Final displayed price       |
+| `hire_period_days`       | Hire period (e.g., 14 days) |
+| `allowed_on_road`        | Displays warning badge      |
+| `forbidden`              | Used for future enhancement |
 
 ---
 
@@ -66,6 +65,7 @@ GET https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowes
 - 📌 **Sticky footer** on mobile with summary and CTA
 
 ---
+
 ## 📦 Run Locally
 
 To run the project on your local machine:
@@ -83,7 +83,4 @@ npm run dev
 
 # Visit the app in your browser
 http://localhost:3000
-
-
-
-
+```
